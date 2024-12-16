@@ -1,0 +1,28 @@
+.actions__submits {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 7, 32);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    &:hover {
+        background-color: rgba(7, 7, 32, 0.508);
+    }
+
+    &_main {
+        padding: 5px 10px;
+        background-color: transparent;
+        @include mixins.adaptiv-font (20, 14);
+    }
+
+    &_time {
+        padding: 5px;
+        border-left: 2px solid rgb(7, 7, 32);
+        background-color:transparent;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+        &:hover {
+            transform: rotate(180deg) scale(1.1);
+            border-left-width: 0px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    background: url("../../public/wallpaper.jpg") center center no-repeat;
+    background-size: cover;
+    @include mixins.adaptiv-font (20, 14);
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        margin: 10px 0;
+        width: 80vw;
+        box-sizing: content-box;
+        border: 2px solid #d6d6d6;
+        border-radius: 10px;
+    }
+}
